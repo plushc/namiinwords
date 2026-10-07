@@ -1,0 +1,239 @@
+body {
+    margin: 0;
+    background-color: #fff8f0;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    color: #5d3b45;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    line-height: 1.15;
+    margin: 0;
+    color:#8f2343
+}
+
+.hero {
+    height: 100vh;
+    min-height: 100vh;
+    padding: 60px 40px;
+    box-sizing: border-box;
+
+    background: linear-gradient(to bottom, #f3d1df 0%, #f7e1e9 40%, #fbf0f3 75%, #fff8f0 100%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 56px;
+    line-height: 1.12;
+    margin: 0;
+    color: #b04f72;
+
+}
+
+.hero h1:first-child {
+    font-style: italic;
+    font-weight: 400;
+    color: #b04f72;
+
+}
+
+.hero h1:nth-child(2), .hero h1:nth-child(3) {
+    font-weight: 700;
+
+}
+
+p {
+    color: #d56989;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 28px;
+}
+
+blockquote {
+    max-width: 650px;
+    margin: 55px auto;
+    padding-left: 30px;
+    border-left: 3px solid #d56989;
+
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.8;
+    color:#d56989
+}
+
+.italic {
+    font-style: italic;
+}
+
+mark {
+    background-color: #f3d6df;
+    color: inherit;
+    padding: 2px 4px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #d56989;
+    margin: 80px auto;
+    max-width: 700px;
+}
+
+.foto {
+    width: 400px;
+    max-width: 85%;
+    margin: 80px auto;
+    padding: 15px 15px 25px;
+    background: #fff;
+    box-shadow: 10px 12px 20px rgba(80, 60, 80, 0.18);
+    transform: rotate(-2deg);
+}
+
+.foto img {
+    width: 100%;
+    display: block;
+    margin: 0;
+}
+
+.foto .caption {
+    margin-top: 15px;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 22px;
+    font-style: normal;
+    color:#8f2343
+}
+
+.signature {
+    margin-top: 100px;
+    margin-left: 0;
+    text-align: right;
+    padding-right: 180px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 28px;
+    color:#8f2343
+}
+
+.signature-heart {
+   margin-top: 55px;
+   margin-left: 48%;
+   font-size: 18px;
+   color: #fa1010;
+   margin-bottom: 180px;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background-image: url("images/lace-frame.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+
+    z-index: 9999;
+    pointer-events: none;
+}
+
+.floral-divider {
+    display: block;
+    width: 75%;
+    max-width: 700px;
+    height: auto;
+    margin: 70px auto;
+}
+
+h1 {
+    animation: fadeInUp 1.4s ease both;
+}
+
+h1:nth-of-type(2) {
+    animation-delay: 0.2s;
+}
+
+h1:nth-of-type(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 600px) {
+
+body {
+        padding: 35px;
+    }
+
+    h1 {
+        font-size: 32px;
+        line-height: 1.15;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.9;
+    }
+
+    .floral-divider {
+        width: 85%;
+        margin: 50px auto;
+    }
+
+    .signature {
+        font-size: 24px;
+    }
+}
+
+.signature {
+    animation: fadeIn 1.2s ease both;
+}
+
+.signature-heart {
+    animation: heartAppear 1.5s ease 0.5s both;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes heartAppear {
+    from {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+

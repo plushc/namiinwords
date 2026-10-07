@@ -200,8 +200,10 @@ h1:nth-of-type(3) {
     }
 
     p {
-        width: 100%;
-        max-width: 100%;
+        width: calc(100% - 110px);
+        max-width: 650px;
+        margin-left: auto;
+        margin-right: auto;
         box-sizing: border-box;
         font-size: 16px;
         line-height: 1.9;

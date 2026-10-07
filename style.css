@@ -183,8 +183,14 @@ h1:nth-of-type(3) {
 
 @media (max-width: 600px) {
 
+    .body {
+        padding: 35px 55px;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
 .hero {
-        padding: 40px 25px;
+        padding: 40px 20px;
     }
 
     .hero h1 {
@@ -193,12 +199,18 @@ h1:nth-of-type(3) {
     }
 
     p {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
         font-size: 16px;
         line-height: 1.9;
+        text-align: left;
+        overflow-wrap: break-word;
     }
 
     .floral-divider {
-        width: 85%;
+        width: 100%;
+        max-width: 100%;
         margin: 50px auto;
     }
 
